@@ -7,7 +7,11 @@
 
         <div class="follow">
             <p>Follow me on</p>
-            <p>Facebook / Instagram / Behance</p>
+            <p>
+                <a href="https://twitter.com/Jiyounhahaha" target="_blank">Twitter</a>
+                / 
+                <a href="https://twitter.com/Jiyounhahaha" target="_blank">Github</a>
+                </p>
         </div>
     </div>
 </template>
@@ -21,7 +25,8 @@
     .Footer {
         padding-top: 20px;
         border-top: solid 1px rgba(0,0,0,0.4);
-        padding-left:10px;
+        padding:10px;
+        padding-top:20px;
         p {
             font-family: 'Roboto';
             font-weight: 400;

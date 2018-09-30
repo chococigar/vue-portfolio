@@ -6,6 +6,7 @@
     	</p>
     	<hr>
     	<p> Sort by: </p>
+    		    <router-view></router-view>
 	    <masonry class="categories" :cols="{default: 5,900:4, 700: 3,500:2,300:1}" :gutter="0">
 	 		<div v-for="(tag, index) in tags"
 	 		class="tag"
@@ -17,6 +18,7 @@
 	        </div>
 
 	    </masonry>
+
 
 
 
@@ -51,7 +53,7 @@
 		            location: 'Daejeon, Korea',
 		            period: '2018.03 - 2018.06',
 		            img: "/src/assets/img/dev_misc/markov.png",
-		            detail: "",
+		            detail: "/works/markov_bts",
 		            type: 'small'
 		        }, {
 		            name: 'Biziduk 비지덕',
@@ -100,7 +102,7 @@
 		            type: 'small'
 		        }, {
 		            name: 'KAORI Poster',
-		            class: ['Poster', 'Design'],
+		            class: ['Poster', 'Design', 'Too much'],
 		            client: 'Chanou Manu',
 		            location: 'Seoul, Korea',
 		            period: '2017.01 - 2017.08',
@@ -244,7 +246,6 @@ hr{
 }
 
 .Works {
-	padding:12px;
 	padding-top:0px;
 
 }

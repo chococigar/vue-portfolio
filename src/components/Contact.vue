@@ -1,12 +1,14 @@
 <template>
-    <div class="Home">
-        <h2>hellodojkojlkj</h2>
+    <div class="contact">
+        <p>Reach me on <br>
+        jiyounjenniferha @ gmail.com</p>
     </div>
 </template>
 
 <style lang="scss">
 
-    .Home {
+    .contact {
+    	padding:10px;
     }
 
 </style>

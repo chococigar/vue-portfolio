@@ -4,3 +4,18 @@
 body {
     margin: 0;
 }
+
+@font-face {
+  font-family: 'Relative-book';
+  src: url('font/relative-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Relative-mono';
+  src: url('font/relative-mono10pitch.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Relative-bold';
+  src: url('font/relative-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}

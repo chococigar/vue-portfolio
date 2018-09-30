@@ -1,29 +1,19 @@
 <template>
-    <div class="Home">
-        <h2>hellodojkojlkj</h2>
-        {{  route  }} 
+    <div class="logs">
+        <h2>Coming soon</h2>
     </div>
 </template>
 
 <style lang="scss">
+	.logs{
+		padding:10px;
+	}
 
 
 
 </style>
 
 <script>
-	export default {
-		data:function(){
-			return{
-				route: this.$route.path
-			}
-		},
-		methods:{
 
-		},
-		computed:{
-
-		}
-	}
 </script>
 

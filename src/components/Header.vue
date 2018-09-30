@@ -3,8 +3,16 @@
 		<p class="header_top"> Jiyoun Ha </p>
  		<ul>
 			<masonry :cols="{default: 5,800:1}" :gutter="0">
-            <li v-for="(tag, index) in header" class="nav_list"> 
-            	<router-link class="nav" :to="tag.route">{{ tag.name }}</router-link>
+            <li v-for="(tag, index) in header" 
+            class="nav_list"> 
+            	<router-link 
+	            	class="nav" 
+	            	:to="tag.route"
+	            	@click.native="route=tag.name"
+	            	v-bind:class="{nav_selected : tag.name==route}"
+
+	            	>{{ tag.name }}
+            	</router-link>
             </li>
       		</masonry>
         </ul>
@@ -38,10 +46,14 @@
 						name: "Contact",
 						route: "/contact"
 					}
-				]
+				],
+				route: 'Works'
 			}
 		},
 		methods:{
+			updateNav(nav){
+				this.route = nav;
+			}
 
 		},
 		computed:{
@@ -54,7 +66,7 @@
 <style lang="scss">
 
 body{
-	font-family: Roboto;
+	font-family: 'Relative-book';
 }
 
 @media all and (max-width:800px) //800px for tablets and phones.
@@ -65,20 +77,26 @@ body{
         float: none; 
         width: 100% !important;
     }
+    .nav_selected{
+		height:24px;
+		background:black;
+		//border-bottom: 1px solid #FFF;
+}
 }
 ul{
 	margin:0;
 	list-style: none;
     padding-left: 12px;
-    max-width:960px;
+    max-width:900px;
 
 }
 
 .header{
 	border-bottom: 1px solid;
+	z-index:-99;
 }
 .header_top{
-	margin-left:12px;
+	margin: 7px 10px 21px;
 }
 
 .nav_list{
@@ -94,7 +112,7 @@ ul{
 }
 .nav{
     display: table;
-    width: 175px;
+    width: 190px;
     height: 100%;
     padding: 5px 0 0 0;
     text-align: center;
@@ -103,14 +121,16 @@ ul{
     border-bottom:none;
     color:black;
     text-decoration: none;
-    margin-right:12px;
+    margin-right:8px;
 }
 .nav:hover{
 	background:black;
 	color:white;
 }
-.nav:click{
-	background:green;
+.nav_selected{
+	height:24px;
+	background:white;
+	//border-bottom: 1px solid #FFF;
 }
 
 </style>
