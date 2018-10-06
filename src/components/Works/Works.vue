@@ -103,75 +103,6 @@
 		            img: "/src/assets/img/invideo/1_pose.png",
 		            detail: "/projects/pajuchurch",
 		            type: 'small'
-		        }, {
-		            name: 'KAORI Poster',
-		            class: ['Poster', 'Design', 'Too much'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/poster/kaori_f.jpg",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: '2017 coworkers',
-		            class: ['Illustration'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/illustration/2017_coworkers.jpg",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: 'Herald poster',
-		            class: ['Illustration', 'Poster', 'Design'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/poster/herald.jpg",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: 'Herald cartoon: Kim Jung Un',
-		            class: ['Illustration', 'Cartoon'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/illustration/herald_cartoon_kimjungun.jpg",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: 'Herald cartoon: While loop',
-		            class: ['Illustration', 'Cartoon'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/illustration/herald_cartoon_while_loop.png",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: 'KAORI t-shirt',
-		            class: ['Design'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/design_misc/kaori_tshirt.png",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
-		        },
-		        {
-		            name: 'elice quiz',
-		            class: ['Illustration'],
-		            client: 'Chanou Manu',
-		            location: 'Seoul, Korea',
-		            period: '2017.01 - 2017.08',
-		            img: "/src/assets/img/illustration/elice_quiz.png",
-		            detail: "/projects/pajuchurch",
-		            type: 'large'
 		        }
        			],
 				tags:[
@@ -284,6 +215,7 @@ span.box_selected:after{
 .project {
   position:relative;
   overflow:hidden;
+  padding:4px;
 }
 
 .project_img{
@@ -291,17 +223,27 @@ span.box_selected:after{
     object-fit: cover;
     width: 100%;
     height: 100%;
-   	transition: transform 2s;
+   	transition: transform 1s;
+   	overflow:hidden;
 }
 
 .project_overlay {
+  font-family: 'Relative-bold';
   position:absolute;
-  top:0px;
-  transition: transform 2s;
+  transition: transform 1s;
   width:100%;
   height:100%;
   overflow:hidden;
   opacity:0;
+  font-size:30px;
+  text-align:center;
+  vertical-align:middle;
+  display: inline-block;
+  top:0; left:0; bottom:0; right:0;
+  margin: auto;
+  line-height: 400px;
+    overflow:hidden;
+
 
 }
 
@@ -321,3 +263,74 @@ span.box_selected:after{
 
 
 </style>
+
+{
+    name: 'KAORI Poster',
+    class: ['Poster', 'Design', 'Too much'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/poster/kaori_f.jpg",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: '2017 coworkers',
+    class: ['Illustration'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/illustration/2017_coworkers.jpg",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: 'Herald poster',
+    class: ['Illustration', 'Poster', 'Design'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/poster/herald.jpg",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: 'Herald cartoon: Kim Jung Un',
+    class: ['Illustration', 'Cartoon'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/illustration/herald_cartoon_kimjungun.jpg",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: 'Herald cartoon: While loop',
+    class: ['Illustration', 'Cartoon'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/illustration/herald_cartoon_while_loop.png",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: 'KAORI t-shirt',
+    class: ['Design'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/design_misc/kaori_tshirt.png",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+},
+{
+    name: 'elice quiz',
+    class: ['Illustration'],
+    client: 'Chanou Manu',
+    location: 'Seoul, Korea',
+    period: '2017.01 - 2017.08',
+    img: "/src/assets/img/illustration/elice_quiz.png",
+    detail: "/projects/pajuchurch",
+    type: 'large'
+}

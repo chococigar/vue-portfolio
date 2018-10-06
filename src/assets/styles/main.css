@@ -9,10 +9,9 @@ body {
   font-family: 'Relative-book';
   src: url('font/relative-book.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
-
 @font-face {
   font-family: 'Relative-mono';
-  src: url('font/relative-mono10pitch.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('font/relative-book.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {

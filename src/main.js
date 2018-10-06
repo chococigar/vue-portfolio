@@ -3,6 +3,10 @@ import VueRouter from 'vue-router';
 import VueMasonry from 'vue-masonry-css';
 import App from './App.vue';
 import Meta from 'vue-meta';
+
+
+console.log("inside main");
+
 import {
     routes
 } from './routes';
@@ -10,6 +14,7 @@ import {
 Vue.use(VueRouter);
 Vue.use(VueMasonry);
 Vue.use(Meta)
+
 
 require('./assets/styles/main.css');
 
