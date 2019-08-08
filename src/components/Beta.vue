@@ -1,6 +1,6 @@
 <template>
     <div class="beta">
-        <h2>hellodojkojlkj</h2>
+        <h2>Under construction</h2>
     </div>
 </template>
 
