@@ -1,6 +1,6 @@
 import Works from './components/Works/Works.vue';
 import Markov_BTS from './components/Works/Markov_bts.vue';
-import Cv from './components/CV.vue';
+import Cv from './components/Cv.vue';
 import Logs from './components/Logs.vue';
 import Beta from './components/Beta.vue';
 import Contact from './components/Contact.vue';
