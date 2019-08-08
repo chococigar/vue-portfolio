@@ -1,7 +1,7 @@
 <template>
     <div class="Footer">
         <div class="info">
-            <p>ⓒ2018 Jiyoun Ha</p>
+            <p>ⓒ2019 Jiyoun Ha</p>
             <p>jiyounjenniferha @ gmail.com</p>
         </div>
 
