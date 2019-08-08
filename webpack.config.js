@@ -8,6 +8,9 @@ module.exports = {
         publicPath: '/dist/',
         filename: 'build.js'
     },
+    node: {
+        "child_process": "empty"
+    },
     module: {
         rules: [{
             test: /\.css$/,
