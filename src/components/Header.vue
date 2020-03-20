@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<p class="header_top"> Jiyoun Ha </p>
-		<p class="header_top"> I am a developer / artist / runner / travelophile. I am especially interested in AI (specifically recommendation systems), human-computer interaction, and distributed systems -- but mostly I'm open to anything that will inspire me. You'll most likely find me working for hours in a local cafe or walking around the riversides of the city. I am always <a href="mailto:jiyounjenniferha@gmail.com?Subject=I challenge you for a 5km over coffee!" target="_blank"><u>open</u></a> for a betting duel on 5km run over coffee. </p>
+		<p class="header_top"> I am a developer / artist / runner / travelophile. I am especially interested in AI (specifically recommendation systems), human-computer interaction, and distributed systems -- but mostly I'm open to anything that will inspire me. You'll most likely find me working for hours in a local cafe or walking around the riversides of the city. I am always <a href="mailto:jiyounjenniferha@gmail.com?Subject=I challenge you for a 5km over coffee!" target="_blank" style="color:black"><u>open</u></a> for a betting duel on 5km run over coffee. </p>
  		<ul>
 			<masonry :cols="{default: 5,800:1}" :gutter="0">
             <li v-for="(tag, index) in header" 
